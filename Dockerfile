@@ -2,8 +2,8 @@ FROM openjdk:8-jdk
 
 RUN apt-get --quiet update --yes && \
  export ANDROID_SDK_TOOLS="4333796" && \
- export ANDROID_BUILD_TOOLS="27.0.3" && \
- export ANDROID_COMPILE_SDK="27" && \
+ export ANDROID_BUILD_TOOLS="28.0.3" && \
+ export ANDROID_COMPILE_SDK="28" && \
  apt-get --quiet install --yes wget tar unzip lib32stdc++6 lib32z1 curl && cd / && \
  wget --quiet --output-document=android-sdk.zip https://dl.google.com/android/repository/sdk-tools-linux-${ANDROID_SDK_TOOLS}.zip && \
  unzip -d android-sdk-linux android-sdk.zip && \
